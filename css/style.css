@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+ html, body, div, a, ul, li, nav {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     background-color: #222;
+     font-family: 'JetBrains Mono', monospace;
+}
+ .wrapper {
+     background-color: #222;
+     padding: 20px;
+     text-align: center;
+}
+ nav {
+     display: block;
+     text-align: center;
+     margin-bottom: 25px;
+}
+ nav ul {
+     margin: 0;
+     padding:0;
+     list-style: none;
+}
+ .nav a {
+     display:block;
+     background: #111;
+     color:#fff;
+     text-decoration: none;
+     padding: .8em 1.8em;
+     text-transform: uppercase;
+     font-size: 80%;
+     letter-spacing: 2px;
+     text-shadow: 0 -1px 0 #000;
+     position: relative;
+}
+ .nav{
+     vertical-align: top;
+     display: inline-block;
+     border-radius:6px;
+}
+ .nav li{
+    position: relative;
+}
+ .nav > li {
+     float:left;
+     border-bottom: 4px #aaa solid;
+     margin-right: 1px;
+}
+ .nav > li > a {
+     margin-bottom:1px;
+}
+ .nav li:hover > a {
+     color:#ffc107;
+}
+ .nav > li:first-child {
+     border-radius: 4px 0 0 4px;
+}
+ .nav > li:first-child>a{
+     border-radius: 4px 0 0 0;
+}
+ .nav > li:last-child {
+     border-radius: 0 0 4px 0;
+     margin-right: 0;
+}
+ .nav > li:last-child >a{
+    border-radius: 0 4px 0 0;
+}
+ .nav li li a {
+     margin-top:1px
+}
+ .nav li a:first-child:nth-last-child(2):before {
+     content:"";
+     position: absolute;
+     height:0;
+     width: 0;
+     border: 5px solid transparent;
+     top: 50% ;
+     right:5px;
+}
+ .nav ul {
+     position: absolute;
+     white-space: nowrap;
+     border-bottom: 5px solid #00bcd4;
+     z-index: 1;
+     left: -99999em;
+}
+ .nav > li:hover > ul {
+     left: auto;
+     padding-top: 5px ;
+     min-width: 100%;
+}
+ .nav > li li ul {
+     border-left:1px solid #fff;
+}
+ .nav > li li:hover > ul {
+     left: 100%;
+     top: -1px;
+}
+ .list {
+     margin: auto;
+     left: 7px;
+}
+ .item {
+     width: 20%;
+     margin-bottom: 15px;
+     position: relative;
+     border: 2px solid #00bcd4;
+}
+ .item:hover {
+    border: 2px solid #ffc107;
+ }
+ .item img {
+     width: 100%;
+     background-color: #fff;
+     height: auto;
+     vertical-align: top;
+}
