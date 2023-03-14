@@ -16,12 +16,12 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
     <div class="wrapper">
         <nav id="filterNav">
         <ul class="nav">
-            <li data-filter="*"><a href="#"><?= totalImages() ?>. ALL</a></li>
+            <li data-filter="*"><a href="#"><small>(<?= totalImages() ?>)</small><br>ALL</a></li>
             <?php
             foreach(glob("images/*", GLOB_ONLYDIR) as $category) {
                 $cat = str_replace("images/", "", $category);
                 if(count(glob($category."/*", GLOB_ONLYDIR)) > 0) {
-                    echo '<li><a href="#" data-filter=".'.$cat.'">'.subCount($category).'. '.$cat.'</a>
+                    echo '<li><a href="#" data-filter=".'.$cat.'"><small>('.subCount($category).')</small><br>'.$cat.'</a>
                     <ul>';
                     foreach(glob($category."/*", GLOB_ONLYDIR) as $subcategory) {
                         $subcat = str_replace($category."/", "", $subcategory);
@@ -32,7 +32,7 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
                     </li>';
                 } else {
                     $count = count(glob($category."/*.{".$formats."}", GLOB_BRACE));
-                    echo '<li><a href="#" data-filter=".'.$cat.'">'.$count.'. '.$cat.'</a></li>';
+                    echo '<li><a href="#" data-filter=".'.$cat.'"><small>('.$count.')</small><br>'.$cat.'</a></li>';
                 }
             }
             ?>

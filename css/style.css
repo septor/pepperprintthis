@@ -28,42 +28,29 @@
      text-decoration: none;
      padding: .8em 1.8em;
      text-transform: uppercase;
-     font-size: 80%;
+     font-size: 75%;
      letter-spacing: 2px;
      text-shadow: 0 -1px 0 #000;
      position: relative;
 }
- .nav{
+ .nav {
      vertical-align: top;
      display: inline-block;
      border-radius:6px;
 }
- .nav li{
+ .nav li {
     position: relative;
 }
  .nav > li {
      float:left;
      border-bottom: 4px #aaa solid;
-     margin-right: 1px;
+     margin-right: 4px;
 }
  .nav > li > a {
      margin-bottom:1px;
 }
  .nav li:hover > a {
      color:#ffc107;
-}
- .nav > li:first-child {
-     border-radius: 4px 0 0 4px;
-}
- .nav > li:first-child>a{
-     border-radius: 4px 0 0 0;
-}
- .nav > li:last-child {
-     border-radius: 0 0 4px 0;
-     margin-right: 0;
-}
- .nav > li:last-child >a{
-    border-radius: 0 4px 0 0;
 }
  .nav li li a {
      margin-top:1px
@@ -95,6 +82,9 @@
  .nav > li li:hover > ul {
      left: 100%;
      top: -1px;
+}
+.nav small {
+     font-size: 0.8em;
 }
  .list {
      margin: auto;

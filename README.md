@@ -10,4 +10,4 @@ This project supports the following image formats `jpg,gif,png,jpeg,svg,webp`. Y
 
 ## Bugs, etc.
 
-Submit an issue. No feature requests will be handled as the project handles my needs just fine (for now).
+Submit an issue. Feature requests are unlikely to be implemented as the project handles my needs just fine (for now).
