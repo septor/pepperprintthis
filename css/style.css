@@ -23,7 +23,7 @@
 }
  .nav a {
      display:block;
-     background: #111;
+     background: #333;
      color:#fff;
      text-decoration: none;
      padding: .8em 1.8em;
@@ -43,8 +43,7 @@
 }
  .nav > li {
      float:left;
-     border-bottom: 4px #aaa solid;
-     margin-right: 4px;
+     margin-right: 6px;
 }
  .nav > li > a {
      margin-bottom:1px;
@@ -67,7 +66,6 @@
  .nav ul {
      position: absolute;
      white-space: nowrap;
-     border-bottom: 5px solid #00bcd4;
      z-index: 1;
      left: -99999em;
 }
@@ -75,9 +73,6 @@
      left: auto;
      padding-top: 5px ;
      min-width: 100%;
-}
- .nav > li li ul {
-     border-left:1px solid #fff;
 }
  .nav > li li:hover > ul {
      left: 100%;

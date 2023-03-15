@@ -62,7 +62,7 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
             ?>
         </div>
     </div>
-    <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/functions.js"></script>
 </body>
