@@ -4,10 +4,10 @@
      padding: 0;
      border: 0;
      background-color: #222;
+     color: #999;
      font-family: 'JetBrains Mono', monospace;
 }
  .wrapper {
-     background-color: #222;
      padding: 20px;
      margin-top: 54px;
      text-align: center;
@@ -30,14 +30,10 @@
 }
  .nav a {
      display:block;
-     background: #333;
-     color:#fff;
      text-decoration: none;
      padding: .8em 1.8em;
-     text-transform: uppercase;
      font-size: 75%;
      letter-spacing: 2px;
-     text-shadow: 0 -1px 0 #000;
      position: relative;
 }
  .nav {
@@ -47,6 +43,7 @@
 }
  .nav li {
     position: relative;
+    font-weight: bold;
 }
  .nav > li {
      float:left;
@@ -56,7 +53,8 @@
      margin-bottom:1px;
 }
  .nav li:hover > a {
-     color:#ffc107;
+     background-color: #000;
+     color:#00bcd4;
 }
  .nav li li a {
      margin-top:1px

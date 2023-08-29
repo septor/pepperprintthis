@@ -4,6 +4,8 @@ My wife watches kids for a living. Those kids like to color. A lot. I started ga
 
 I switched gears and decided to lean into [Isotope](https://isotope.metafizzy.co/) to make things easier. Now things are faster.
 
+Oh, to explain the name; my nephews call me Pepper (I have no idea why), and this is the polite way they ask me for more crap to color.
+
 ## Information
 
 This project supports the following image formats `jpg,gif,png,jpeg,svg,webp`. You can add more on line 4 of `index.php`. This is set up so your images are in categories and/or subcategories. Following the following directory structure: `images/category/image.ext` or `images/category/subcategory/image.ext`. Everything should populate after that just fine.
