@@ -10,7 +10,7 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pepper Print This:</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -64,6 +64,6 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="functions.js"></script>
 </body>
 </html>
