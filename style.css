@@ -103,3 +103,7 @@
      height: auto;
      vertical-align: top;
 }
+ .item i {
+     font-size: 0.6em;
+     font-style: normal;
+}

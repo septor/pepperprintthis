@@ -45,6 +45,7 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
                 $cat = str_replace('images/', '', $category);
                 foreach(glob($category."/*.{".$formats."}", GLOB_BRACE) as $file) {
                     echo '<div class="item '.$cat.'">
+                    '.(isset($_GET['debug']) ? '<i>'.str_replace('images/'.$cat.'/', '', $file).'</i>' : '').'
                     <a href="#" onclick="printJS(\''.$file.'\', \'image\');return false;"><img src="'.$file.'"></a>
                 </div>';
                 }
@@ -52,8 +53,8 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
                     $subcat = str_replace($category.'/', '', $subcategory);
                     
                     foreach(glob($subcategory."/*.{".$formats."}", GLOB_BRACE) as $subfile) {
-
                         echo '<div class="item '.$cat.' '.$subcat.'">
+                        '.(isset($_GET['debug']) ? '<i>'.str_replace('images/'.$cat.'/'.$subcat.'/', '', $subfile).'</i>' : '').'
                         <a href="#" onclick="printJS(\''.$subfile.'\', \'image\');return false;"><img src="'.$subfile.'"></a>
                     </div>';
                     }
