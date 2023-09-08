@@ -2,7 +2,7 @@
 
 My wife watches kids for a living. Those kids like to color. A lot. I started gathering coloring pages online to print off for them all to color. It got out of control. I made [a script](https://github.com/septor/gallery) to display all those coloring sheets. However, it took time to load each page. The kids did not have time for that garbage.
 
-I switched gears and decided to lean into [Isotope](https://isotope.metafizzy.co/) to make things easier. Now things are faster.
+I switched gears and decided to lean into [Isotope](https://isotope.metafizzy.co/) to make things easier. Now things are faster. I also utilize [Print.js](https://printjs.crabbly.com/) to make the printing process as easy as clicking on the images tile.
 
 Oh, to explain the name; my nephews call me Pepper (I have no idea why), and this is the polite way they ask me for more crap to color.
 

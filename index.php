@@ -45,7 +45,7 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
                 $cat = str_replace('images/', '', $category);
                 foreach(glob($category."/*.{".$formats."}", GLOB_BRACE) as $file) {
                     echo '<div class="item '.$cat.'">
-                    <a href="'.$file.'"><img src="'.$file.'"></a>
+                    <a href="#" onclick="printJS(\''.$file.'\', \'image\');return false;"><img src="'.$file.'"></a>
                 </div>';
                 }
                 foreach(glob($category."/*", GLOB_ONLYDIR) as $subcategory) {
@@ -54,7 +54,7 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
                     foreach(glob($subcategory."/*.{".$formats."}", GLOB_BRACE) as $subfile) {
 
                         echo '<div class="item '.$cat.' '.$subcat.'">
-                        <a href="'.$subfile.'"><img src="'.$subfile.'"></a>
+                        <a href="#" onclick="printJS(\''.$subfile.'\', \'image\');return false;"><img src="'.$subfile.'"></a>
                     </div>';
                     }
                 }
@@ -64,6 +64,7 @@ $formats = "jpg,gif,png,jpeg,svg,webp";
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
     <script src="functions.js"></script>
 </body>
 </html>
