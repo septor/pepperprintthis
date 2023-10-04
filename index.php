@@ -1,7 +1,7 @@
 <?php
 require_once("func.php");
 
-$formats = "jpg,gif,png,jpeg,svg,webp";
+$formats = "jpg,gif,png,jpeg,svg,webp,avif";
 ?>
 <!DOCTYPE html>
 <html lang="en">

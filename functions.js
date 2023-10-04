@@ -19,7 +19,6 @@
       };
     };
   
-    // smartresize
     jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
   
   })(jQuery,'smartresize');
@@ -27,8 +26,6 @@
   (function ($) {
   
     "use strict";
-  
-    // Initiating Isotope
     var $container = $('.list');
     var colWidth = function () {
       var w = $container.width(),
@@ -45,12 +42,10 @@
       }
       columnWidth = Math.floor(w/columnNum);
       columnWidth = columnWidth - 10;
-      // Item width
       $container.find('.item').each(function() {
         var $item = $(this);
         var multiplier_w = $item.attr('class').match(/item-w(\d)/);
         var width = multiplier_w ? columnWidth*multiplier_w[1]-4 : columnWidth-4;
-        // Update item width
         $item.css({
           width: width
         });
@@ -69,7 +64,6 @@
       });
     };
   
-    // Activating Isotope Filter Navigation
     $('#filterNav').on('click', 'a', function () {
       var selector = $(this).attr('data-filter');
       $container.isotope({
@@ -77,11 +71,9 @@
       });
     });
 
-    // Calling Isotope
     isotope();
     $(window).smartresize(isotope);
   
-    // Call after content loading
     $(window).load(function () {
       isotope();
     });
